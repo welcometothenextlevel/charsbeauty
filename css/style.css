@@ -4152,3 +4152,34 @@ h3 {
   .shr-combo-row { flex-wrap: wrap; gap: 8px; }
   .shr-combo-book { margin-left: 0; }
 }
+
+/* ============================================================
+   SHR BEFORE/AFTER RESULTS GRID
+   ============================================================ */
+.shr-ba-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 32px;
+}
+.shr-ba-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #EDE8E3;
+}
+.shr-ba-item img {
+  width: 100%;
+  height: auto;
+  max-height: 560px;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.3s ease;
+}
+.shr-ba-item:hover img { transform: scale(1.02); }
+@media (max-width: 700px) {
+  .shr-ba-grid { grid-template-columns: 1fr; gap: 12px; }
+  .shr-ba-item img { max-height: 420px; }
+}
