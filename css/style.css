@@ -92,7 +92,7 @@ h3 {
   z-index: 100;
   background: #FFFFFF;
   border-bottom: 1px solid #EDE8E3;
-  height: 70px;
+  height: 82px;
   display: flex;
   align-items: center;
 }
@@ -3229,7 +3229,7 @@ h3 {
   border-bottom: 1px solid rgba(201,162,39,0.2);
 }
 .nav-logo-img {
-  height: 65px !important;
+  height: 78px !important;
 }
 
 /* Wave dividers */
@@ -4102,4 +4102,53 @@ h3 {
   .hp-contact-section { padding: 60px 20px; }
   .hp-form-row { grid-template-columns: 1fr; }
   .hp-contact-botanical { display: none; }
+}
+
+/* ── Logo: mobile size override ── */
+@media (max-width: 900px) {
+  .site-nav { height: 64px; }
+  .nav-logo-img { height: 55px !important; }
+}
+
+/* ── SHR Combination Package price list ── */
+.shr-combo-list { margin: 0; }
+.shr-combo-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-bottom: 1px solid #EDE8E3;
+  gap: 16px;
+}
+.shr-combo-row:last-child { border-bottom: none; }
+.shr-combo-name {
+  font-family: 'Jost', sans-serif;
+  font-size: 0.97rem;
+  color: #2C2C2C;
+  flex: 1;
+  line-height: 1.5;
+}
+.shr-combo-price {
+  font-family: 'Jost', sans-serif;
+  font-weight: 500;
+  color: #C9A227;
+  font-size: 1rem;
+  white-space: nowrap;
+  min-width: 48px;
+  text-align: right;
+}
+.shr-combo-book {
+  font-family: 'Jost', sans-serif;
+  font-size: 0.78rem;
+  color: #B6C6B6;
+  text-decoration: none;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+  margin-left: 16px;
+  transition: color 0.2s;
+}
+.shr-combo-book:hover { color: #2A342A; }
+@media (max-width: 480px) {
+  .shr-combo-row { flex-wrap: wrap; gap: 8px; }
+  .shr-combo-book { margin-left: 0; }
 }
