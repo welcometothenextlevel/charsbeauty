@@ -92,7 +92,7 @@ h3 {
   z-index: 100;
   background: #FFFFFF;
   border-bottom: 1px solid #EDE8E3;
-  height: 82px;
+  height: 94px;
   display: flex;
   align-items: center;
 }
@@ -1765,78 +1765,7 @@ h3 {
   flex-shrink: 0;
 }
 
-/* ============================================================
-   WHATSAPP FLOATING WIDGET
-   ============================================================ */
-.wa-widget {
-  position: fixed;
-  bottom: 28px;
-  right: 28px;
-  z-index: 999;
-  display: flex;
-  align-items: center;
-  gap: 0;
-}
-
-.wa-tooltip {
-  opacity: 0;
-  pointer-events: none;
-  background: #2A342A;
-  color: #FFFFFF;
-  font-family: 'Jost', sans-serif;
-  font-weight: 300;
-  font-size: 0.75rem;
-  letter-spacing: 0.06em;
-  padding: 7px 14px;
-  white-space: nowrap;
-  margin-right: 10px;
-  transition: opacity 0.3s ease;
-}
-
-.wa-widget:hover .wa-tooltip {
-  opacity: 1;
-}
-
-.wa-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 58px;
-  height: 58px;
-  border-radius: 50%;
-  background: #2A342A;
-  box-shadow: 0 4px 20px rgba(138,158,138,0.45);
-  transition: background 0.3s ease, transform 0.3s ease;
-  flex-shrink: 0;
-}
-
-.wa-btn:hover {
-  background: #3D4A3D;
-  transform: scale(1.08);
-}
-
-.wa-btn svg {
-  width: 28px;
-  height: 28px;
-  fill: #FFFFFF;
-}
-
-@media (max-width: 640px) {
-  .wa-widget {
-    bottom: 20px;
-    right: 20px;
-  }
-
-  .wa-btn {
-    width: 52px;
-    height: 52px;
-  }
-
-  .wa-btn svg {
-    width: 24px;
-    height: 24px;
-  }
-}
+/* WhatsApp widget removed */
 
 /* ============================================================
    BIO SPICULES SECTION
@@ -3229,7 +3158,7 @@ h3 {
   border-bottom: 1px solid rgba(201,162,39,0.2);
 }
 .nav-logo-img {
-  height: 78px !important;
+  height: 90px !important;
 }
 
 /* Wave dividers */
@@ -3494,8 +3423,7 @@ h3 {
   .sticky-book-btn:hover { opacity: 0.92; }
   /* Ensure content is not hidden behind the sticky bar */
   body { padding-bottom: 52px; }
-  /* Lift WhatsApp above the sticky bar */
-  .wa-widget { bottom: 70px; }
+
 }
 
 /* --- Popup modal --- */
@@ -4106,8 +4034,8 @@ h3 {
 
 /* ── Logo: mobile size override ── */
 @media (max-width: 900px) {
-  .site-nav { height: 64px; }
-  .nav-logo-img { height: 55px !important; }
+  .site-nav { height: 72px; }
+  .nav-logo-img { height: 62px !important; }
 }
 
 /* ── SHR Combination Package price list ── */
