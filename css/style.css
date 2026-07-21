@@ -1478,6 +1478,22 @@ h3 {
   letter-spacing: 0.05em;
 }
 
+.footer-credit {
+  margin-top: 6px;
+}
+
+.footer-credit a {
+  color: #878171;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(135, 129, 113, 0.4);
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.footer-credit a:hover {
+  color: #B6C6B6;
+  border-color: #B6C6B6;
+}
+
 /* ============================================================
    RESPONSIVE
    ============================================================ */
