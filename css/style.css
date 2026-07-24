@@ -3859,6 +3859,50 @@ h3 {
   letter-spacing: 0.03em;
 }
 
+/* --- Popup terms & conditions dropdown --- */
+.hp-popup-terms {
+  text-align: left;
+  margin: 0 0 24px;
+  border-top: 1px solid #EAE6DC;
+  border-bottom: 1px solid #EAE6DC;
+}
+.hp-popup-terms summary {
+  font-family: 'Jost', sans-serif;
+  font-weight: 400;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #2A342A;
+  cursor: pointer;
+  list-style: none;
+  padding: 14px 24px 14px 0;
+  position: relative;
+}
+.hp-popup-terms summary::-webkit-details-marker { display: none; }
+.hp-popup-terms summary::after {
+  content: '+';
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  color: #C9A227;
+}
+.hp-popup-terms[open] summary::after { content: '–'; }
+.hp-popup-terms ul {
+  list-style: disc;
+  margin: 0 0 16px;
+  padding: 0 0 0 20px;
+}
+.hp-popup-terms li {
+  font-family: 'Jost', sans-serif;
+  font-weight: 300;
+  font-size: 0.82rem;
+  color: #5A5A5A;
+  line-height: 1.6;
+  padding: 4px 0;
+}
+
 /* ============================================================
    TESTIMONIALS SLIDER (CHANGE 4)
    ============================================================ */
